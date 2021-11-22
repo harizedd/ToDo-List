@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: #FFAFBD no-repeat center center fixed;
+    background: -webkit-linear-gradient(to top, #ffc3a0, #FFAFBD);
+    background: linear-gradient(to top, #ffc3a0, #FFAFBD);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+body {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin: 1rem 3rem;
+}
+
+.title {
+    color: #800f2f;
+    font-weight: 500;
+    font-size: 8rem;
+}
+
+.inputDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    padding: 0.5rem 1rem;
+    outline: none;
+    height: 3rem;
+    border-radius: 10px;
+    border: 3px solid #95a3bd;
+    width: 20rem;
+    margin: 0.4rem;
+    transition: 0.5s;
+    font: 1.15rem;
+}
+
+.add {
+    outline: none;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: #ff758f;
+    cursor: pointer;
+    margin: 0.25rem;
+    border: 2px solid currentColor;
+    color: #590d22;
+    background-color: #ff7096;
+    font-family: roboto;
+    font-weight: 100;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    transition: .2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+    text-transform: uppercase;
+    padding: 8px;
+    display: inline-block;
+    font-size: .7rem;
+}
+
+.add::after {
+    background-color: #ff758f;
+    border-radius: 3rem;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: .2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+}
+
+.add:hover::after {
+    transform: translate(0, 0);
+}
+
+.add:hover {
+    border: 2px solid transparent;
+    color: #590d22;
+    transform: scale(1.05);
+    will-change: transform;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.item_input {
+    background: #ffffff;
+    outline: none;
+    border: 3px solid #f5e2fd;
+    border-radius: 10px;
+    padding: 10px;
+    color: #000000;
+    margin-top: 10px;
+    font-size: 20px;
+    width: 19rem;
+}
+
+.remove {
+    background: none;
+    outline: none;
+    border: none;
+    color: #800f2f;
+    font-size: 2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.remove_btn {
+    border: 2px solid currentColor;
+    border-radius: 3rem;
+    color: #590d22;
+    background-color: #ff7096;
+    font-family: roboto;
+    font-weight: 100;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    transition: .2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+    width: 12rem;
+    height: 2rem;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    padding: 8px;
+    display: inline-block;
+    text-align: center;
+    font-size: .7rem;
+}
+
+.remove_btn::after {
+    background-color: #ff758f;
+    border-radius: 3rem;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: .2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+}
+
+.remove_btn:hover::after {
+    transform: translate(0, 0);
+}
+
+.remove_btn:hover {
+    border: 2px solid transparent;
+    color: #590d22;
+    transform: scale(1.05);
+    will-change: transform;
+}
+
+
+/*
+.remove_btn:hover {
+    background: #ff477e;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-sshadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+    transition: all 0.4s ease 0s;
+} */
+
+
+/* .remove_btn {
+    margin-top: 1.5rem;
+    color: #fff0f3;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ff7096;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    font-size: .7rem;
+    transition: all 0.4 ease 0s;
+    width: 12rem;
+    height: 2rem;
+} */
